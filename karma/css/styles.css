@@ -1,35 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 17px;
-  line-height: 1em;
+  font-size: 16px;
+  letter-spacing: 0.03em;
 }
 .container {
   max-width: 63em;
+  height: 70px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 /* Header */
-.navbar {
-  border-bottom: 1px solid #989ba5;
+.top-navigation {
+  background-color: #ffffff;
+  border-bottom: 1px solid #b3b3b3;
+  position: fixed;
+  width: 100%;
 }
-.navbar .logo {
+.top-navigation .logo {
+  float: left;
   width: 2.5em;
   height: 2.5em;
-  float: left;
+  margin-top: 1em;
 }
-.navbar .header-nav li {
+.top-navigation .nav-links {
+  float: right;
+  margin-top: 1.7em;
+}
+.top-navigation .nav-links li {
   display: inline-block;
-  padding: 0.5em 1em;
+  margin-left: 1.3em;
 }
-.navbar .header-nav a {
-  color: #989ba5;
-  font-size: 1em;
+.top-navigation .nav-links a {
+  color: #b3b3b3;
+  font-weight: 300;
+  font-size: 1.04em;
   text-decoration: none;
 }
-.navbar .header-nav a.active {
-  color: #1d1e21;
+.top-navigation .nav-links a.active {
+  color: #333333;
   font-weight: 500;
 }
-/* Masthead intro with background image */
-.masthead {
-  clear: both;
+.top-navigation .nav-links a:hover {
+  cursor: pointer;
+  color: #333333;
 }
+/* Masthead intro with background image */
