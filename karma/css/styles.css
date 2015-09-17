@@ -1,3 +1,35 @@
-h1 {
-	color: red;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  line-height: 1em;
+}
+.container {
+  max-width: 63em;
+  margin: 0 auto;
+}
+/* Header */
+.navbar {
+  border-bottom: 1px solid #989ba5;
+}
+.navbar .logo {
+  width: 2.5em;
+  height: 2.5em;
+  float: left;
+}
+.navbar .header-nav li {
+  display: inline-block;
+  padding: 0.5em 1em;
+}
+.navbar .header-nav a {
+  color: #989ba5;
+  font-size: 1em;
+  text-decoration: none;
+}
+.navbar .header-nav a.active {
+  color: #1d1e21;
+  font-weight: 500;
+}
+/* Masthead intro with background image */
+.masthead {
+  clear: both;
 }
