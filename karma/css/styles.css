@@ -13,17 +13,18 @@ body {
 .container {
   max-width: 63em;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 1em;
 }
 /* Header */
 .top-navigation {
   background-color: #ffffff;
   border-bottom: 1px solid #b3b3b3;
   border-top: 1px solid #b3b3b3;
-  position: fixed;
-  top: 0;
   width: 100%;
   height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
 }
 .top-navigation .logo {
   float: left;
@@ -96,17 +97,17 @@ body {
 }
 /* Main content */
 .content-main {
-  text-align: center;
-}
-.content-main container {
   overflow: auto;
+  padding: 6em 0 9em 0;
+  text-align: center;
 }
 .content-main h1 {
   font-weight: 300;
-  font-size: 47px;
+  font-size: 44px;
 }
 .content-main figure {
   float: left;
+  margin: 1em 3.3em;
 }
 .content-main figure img {
   width: 8em;
@@ -119,4 +120,8 @@ body {
 /* Footer content */
 .content-footer {
   clear: both;
+  text-align: center;
+}
+.content-footer .container {
+  border-top: 1px solid #b3b3b3;
 }
