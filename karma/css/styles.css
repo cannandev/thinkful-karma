@@ -9,7 +9,10 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  font-weight: 300;
   letter-spacing: 0.03em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .container {
   max-width: 63em;
@@ -21,8 +24,10 @@ body {
 .top-navigation {
   background-color: #ffffff;
   border-bottom: 1px solid #b3b3b3;
+  border-top: 1px solid #b3b3b3;
   position: fixed;
   width: 100%;
+  top: 0;
 }
 .top-navigation .logo {
   float: left;
@@ -40,7 +45,6 @@ body {
 }
 .top-navigation .nav-links a {
   color: #b3b3b3;
-  font-weight: 300;
   font-size: 1.04em;
   text-decoration: none;
 }
@@ -52,4 +56,40 @@ body {
   cursor: pointer;
   color: #333333;
 }
-/* Masthead intro with background image */
+/* Masthead section with background image */
+.masthead {
+  background: url(../images/first-background.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  margin-top: 70px;
+  color: #ffffff;
+  min-height: 41.6em;
+  padding-left: 1em;
+}
+.masthead h1 {
+  text-align: center;
+  padding: 4.2em 0 0 0;
+  margin: 0;
+  font-weight: 300;
+  font-size: 50px;
+}
+.masthead p {
+  text-align: center;
+  font-size: 25px;
+  margin: 0.8em 0;
+}
+.masthead a.more {
+  display: block;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #f15a29;
+  width: 10em;
+  border-radius: 5px;
+}
+.masthead a.more:hover {
+  background-color: #d9400e;
+}
