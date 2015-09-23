@@ -1,0 +1,106 @@
+@brand: #D4564E;
+@dark: #D48083;
+@hilight: #FF392F;
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+}
+
+a, a:visited {
+  color: @hilight;
+  text-decoration: none;
+}
+a:hover {
+  color: lighten(@hilight, 5%);
+}
+
+.masthead {
+  background: @brand url("https://images.unsplash.com/photo-1442600678244-fc0253be6acb?fit=crop&fm=jpg&h=800&q=80&w=1200") right 20% no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid #000;
+  border-top: 1em solid @brand;
+  
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 6em 1em;
+  }
+  strong {
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Inknut Antiqua', serif;
+    font-weight: 800;
+    font-size: 2em;
+    letter-spacing: -0.1em;
+    margin-top: 0.2em;
+    text-shadow: -4px 3px 0 rgba(255, 255, 255, 0.5);
+  }
+}
+
+section {
+  margin: 4em auto;
+  max-width: 38em;
+  padding: 0 1em;
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 1em;
+  }
+  p {
+    margin: 1em 0;
+    line-height: 1.2em;
+  }
+}
+
+.questions-section {
+  h2 {
+    color: @brand;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 1.1em;
+    margin-top: 1em;
+   }
+  em, i {
+    font-style: italic;
+    font-weight: 800;
+  }
+}
+
+.content-footer {
+  background-color: @dark;
+  padding: 4em 0 2em 0;
+  text-align: center;
+  & > p {
+    color: #fff;
+  }
+  .social {
+    margin: 1em 0;
+    li {
+      display: inline-block;
+      font-weight: bold;
+      margin: 0 0.5em;
+    }
+  }
+  a.credit {
+    color: darken(@brand, 30%);
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .masthead {
+    h1 {
+      font-size: 1em;
+    }
+  }
+  section {
+    max-width: none;
+    padding: 0 0.5em;
+  }
+  .social {
+    li a {
+      font-size: 2em;
+    }
+  }
+}
