@@ -74,13 +74,20 @@ section p {
 }
 .projects figcaption {
   background-color: #000;
-  color: #fff;
-  padding: 1em;
+  color: #ffffff;
 }
 @media only screen and (min-width: 768px) {
   .projects figcaption {
     margin-left: 2px;
   }
+}
+.projects figcaption a {
+  display: block;
+  padding: 1em;
+}
+.projects figcaption a:hover {
+  background-color: #d4564e;
+  color: #ffffff;
 }
 .content-footer {
   background-color: #d48083;
@@ -88,7 +95,7 @@ section p {
   text-align: center;
 }
 .content-footer > p {
-  color: #fff;
+  color: #ffffff;
 }
 .content-footer .social {
   margin: 1em 0;
