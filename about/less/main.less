@@ -15,6 +15,12 @@ a:hover {
   color: lighten(@hilight, 5%);
 }
 
+/* responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .masthead {
   background: @brand url("https://images.unsplash.com/photo-1442600678244-fc0253be6acb?fit=crop&fm=jpg&h=800&q=80&w=1200") right 20% no-repeat;
   background-size: cover;
@@ -67,6 +73,25 @@ section {
   }
 }
 
+.projects {
+  figure {
+    margin-top: 1em;    
+    @media only screen and (min-width: 768px){
+      width: 50%;
+      display: inline-block;
+      margin-left: -5px;
+    }
+  }
+  figcaption {
+    background-color: #000;
+    color: #fff;
+    padding: 1em;
+    @media only screen and (min-width: 768px){
+      margin-left: 2px;
+    }
+  }
+}
+
 .content-footer {
   background-color: @dark;
   padding: 4em 0 2em 0;
@@ -100,7 +125,7 @@ section {
   }
   .social {
     li a {
-      font-size: 2em;
+      font-size: 18px;
     }
   }
 }
