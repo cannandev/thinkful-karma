@@ -106,12 +106,13 @@ body {
   font-size: 44px;
 }
 .content-main figure {
-  float: left;
-  margin: 1em 3.3em;
+  display: inline-block;
+  margin: 0 2em 0 0;
   /* normalize override */
 }
 .content-main figure img {
   width: 8em;
+  margin-bottom: 3em;
 }
 .content-main figure figcaption {
   text-align: center;
@@ -121,10 +122,12 @@ body {
 /* Footer content */
 .content-footer {
   clear: both;
+  height: 285px;
   text-align: center;
 }
 .content-footer .container {
   border-top: 1px solid #f1f1f2;
+  max-width: 60em;
 }
 .content-footer .container > p:first-child {
   font-weight: 400;
