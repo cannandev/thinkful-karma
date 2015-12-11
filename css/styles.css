@@ -17,7 +17,7 @@ body {
 }
 /* Header */
 .top-navigation {
-  background-color: #ffffff;
+  background-color: #fff;
   border-bottom: 1px solid #f1f1f2;
   border-top: 1px solid #f1f1f2;
   width: 100%;
@@ -48,19 +48,19 @@ body {
   text-decoration: none;
 }
 .top-navigation .nav-links a.active {
-  color: #333333;
+  color: #333;
   font-weight: 500;
 }
 .top-navigation .nav-links a:hover {
   cursor: pointer;
-  color: #333333;
+  color: #333;
 }
 /* Masthead section with background image */
 .introduction {
   background: url(../images/first-background.jpg) 0 bottom no-repeat;
   background-size: cover;
   margin-top: 70px;
-  color: #ffffff;
+  color: #fff;
   min-height: 41.6em;
   padding-left: 1em;
   text-align: center;
@@ -77,8 +77,8 @@ body {
   padding-bottom: 1em;
 }
 .introduction a.btn {
-  background-color: #f15a29;
-  color: #ffffff;
+  background-color: #F15A29;
+  color: #fff;
   border-radius: 5px;
   font-family: "Lucida Grande", sans-serif;
   font-size: 18px;
@@ -90,7 +90,7 @@ body {
   background-color: #d9400e;
 }
 .introduction a.watch {
-  background-color: #6f97b5;
+  background-color: #6F97B5;
 }
 .introduction a.watch:hover {
   background-color: #527e9f;
@@ -137,13 +137,14 @@ body {
   display: inline-block;
   border: 1px solid #eee;
   border-radius: 50%;
-  width: 2em;
-  height: 2em;
+  width: 2.4em;
+  height: 2.4em;
   margin-right: 0.6em;
-  padding: 8px 6px 0px 4px ;
 }
 .content-footer .social li a {
   font-size: 1.1em;
+}
+.content-footer .social li i {
   padding: 10px;
 }
 .content-footer .fa-twitter {
