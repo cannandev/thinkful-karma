@@ -11,7 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .container {
-  max-width: 63em;
+  max-width: 80%;
   margin: 0 auto;
   padding: 0 1em;
 }
@@ -26,15 +26,21 @@ body {
   top: 0;
   z-index: 9999;
 }
+.top-navigation > .container {
+  min-width: 700px;
+  max-width: 60em;
+}
 .top-navigation .logo {
   float: left;
   width: 2.5em;
   height: 2.5em;
   margin-top: 1em;
+  margin-left: 2em;
 }
 .top-navigation .nav-links {
   float: right;
   margin-top: 1.7em;
+  margin-right: 2.3em;
 }
 .top-navigation .nav-links li {
   display: inline-block;
@@ -98,7 +104,7 @@ body {
 /* Main content */
 .content-main {
   overflow: auto;
-  padding: 6em 0 9em 0;
+  padding: 6em 0 7em 0;
   text-align: center;
 }
 .content-main h1 {
@@ -107,7 +113,7 @@ body {
 }
 .content-main figure {
   display: inline-block;
-  margin: 0 2em 0 0;
+  margin: 0 2em 2em 0;
   /* normalize override */
 }
 .content-main figure img {
@@ -127,7 +133,6 @@ body {
 }
 .content-footer .container {
   border-top: 1px solid #f1f1f2;
-  max-width: 60em;
 }
 .content-footer .container > p:first-child {
   font-weight: 400;
